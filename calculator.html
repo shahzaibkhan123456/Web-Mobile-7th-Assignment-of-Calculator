@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Assignment (JS)</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="main">
+        <div>
+            <input id="result" class="result" type="text" name="" id="">
+        </div>
+        <div>
+            <button class="cleatbtn" onclick="clearResult()">C</button>
+        
+        </div>
+        <div>
+            <button class="btn" onclick="getNumber('7')">7</button>
+            <button class="btn" onclick="getNumber('8')">8</button>
+            <button class="btn" onclick="getNumber('9')">9</button>
+            <button class="btn" onclick="getNumber('*')">x</button>
+        </div>
+        <div>
+            <button class="btn" onclick="getNumber('4')">4</button>
+            <button class="btn" onclick="getNumber('5')">5</button>
+            <button class="btn" onclick="getNumber('6')">6</button>
+            <button class="btn" onclick="getNumber('-')">-</button>
+        </div>
+        <div>
+            <button class="btn" onclick="getNumber('1')">1</button>
+            <button class="btn" onclick="getNumber('2')">2</button>
+            <button class="btn" onclick="getNumber('3')">3</button>
+            <button class="btn" onclick="getNumber('+')">+</button>
+        </div>
+        <div>
+            <button class="halfbtn" onclick="getResult('0')">0</button>
+            <button class="halfbtn" onclick="getResult('')">=</button>
+            
+        </div>
+    </div>
+
+
+
+<!-- ------------2nd Calculator ------------->
+
+
+<table>
+    <!-- Head section of the Calculator -->
+    <tr>
+        <tr>
+            <td class="heading">
+                Smart Calculator
+
+            </td>
+        </tr>
+        <td>
+            <input type="text" id="input" placeholder="0" readonly="readonly" >
+            <input type="text" id="answer"  readonly="readonly" style="color:green;" >
+        </td>
+    </tr>
+   <!-- Button section of the Calculator -->
+   <tr>
+       <td>
+           <input type="button" value="CE" onclick="clearScreen()" style="color:white; background: red;">
+           <input type="button" value="&#247" onclick="getOperand('/')">
+           <input type="button" value="x" onclick="getOperand('x')">
+           <input type="button" value="&#8592" onclick="backSpace()" style="color:red;">
+           <br>
+
+
+
+           <input type="button" value="1" onclick="getNumber(1)">
+           <input type="button" value="2" onclick="getNumber(2)">
+           <input type="button" value="3" onclick="getNumber(3)">
+           <input type="button" value="+" onclick="getOperand('+')">
+
+           <br>
+
+           <input type="button" value="4" onclick="getNumber(4)">
+           <input type="button" value="5" onclick="getNumber(5)">
+           <input type="button" value="6" onclick="getNumber(6)">
+           <input type="button" value="-" onclick="getOperand('-')">
+          
+
+           <br>
+
+           <input type="button" value="7" onclick="getNumber(7)">
+           <input type="button" value="8" onclick="getNumber(8)">
+           <input type="button" value="9" onclick="getNumber(9)">
+           <input type="button" value=" ( ) " onclick="brackets()">
+           <br>
+           <input type="button" value="+/-" onclick="getOperand('+/-')">
+           <input type="button" value="0" onclick="getNumber(0)">
+           <input type="button" value="=" onclick="compute()" style="width: 120px; color:white; background:green">
+           <br>
+       </td>
+   </tr>
+</table>
+
+</body>
+<script src="calculator.js"></script>
+</html>
